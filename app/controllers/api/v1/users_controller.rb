@@ -9,6 +9,11 @@ class Api::V1::UsersController < ApplicationController
         render json: user
     end
 
+    def create
+        user = User.create()
+    end
+
+
     def update
     end
 end

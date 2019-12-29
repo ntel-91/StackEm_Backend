@@ -4,6 +4,7 @@ class Api::V1::GamesController < ApplicationController
         render json: games
     end
 
+    
     def update
     end
 
