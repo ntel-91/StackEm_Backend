@@ -11,7 +11,7 @@ class Api::V1::GamesController < ApplicationController
     def create
         datetime = Time.now
         date = datetime.strftime("%-d/%-m/%Y")
-        time = datetime.strftime("%I:%M %p")
+        time = datetime.strftime("%I:%M %-p")
         game = Game.create(user_id: params[:user_id], score: params[:score], date: date, time: time)
 
         render json: game
